@@ -2,6 +2,6 @@
 
 @section('content')
 
-  <a href="todos">Welcome to Techlord </a>
+    New page for us
 
 @stop
