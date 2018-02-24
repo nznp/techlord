@@ -1,6 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.dashboard')
 
-@section('content')
+@section('page_heading','All Tags')
+@section('section')
 
 <div class="card card-default">
         <div class="card-header"> Tags</div>

@@ -1,7 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.dashboard')
 
-@section('content')
-    
+@section('page_heading','Create Tag')
+@section('section')    
+
     @include('admin.includes.errors')
 
     <div class="card card-default">

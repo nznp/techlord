@@ -1,6 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.dashboard')
 
-@section('content')
+@section('page_heading','Create Category')
+@section('section')
     
     @include('admin.includes.errors')
 

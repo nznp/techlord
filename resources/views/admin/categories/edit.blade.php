@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.dashboard')
 
-@section('content')
-    
+@section('page_heading','Update Category')
+@section('section')    
     @include('admin.includes.errors')
 
     <div class="card card-default">

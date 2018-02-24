@@ -15,9 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
-    return View::make('new_home');
-});
 
 Route::get('/test/charts', function()
 {
@@ -84,7 +81,7 @@ Auth::routes();
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
-    Route::get('/homes', 'HomeController@index')->name('homes');
+    Route::get('/home', 'HomeController@index')->name('home');
 
     Route::get('/post/create', [
         'uses'  => 'PostsController@create',
