@@ -15,11 +15,76 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/test', function () {
+    return View::make('new_home');
+});
+
+Route::get('/test/charts', function()
+{
+	return View::make('mcharts');
+});
+
+Route::get('/test/tables', function()
+{
+	return View::make('table');
+});
+
+Route::get('/test/forms', function()
+{
+	return View::make('form');
+});
+
+Route::get('/test/grid', function()
+{
+	return View::make('grid');
+});
+
+Route::get('/test/buttons', function()
+{
+	return View::make('buttons');
+});
+
+
+Route::get('/test/icons', function()
+{
+	return View::make('icons');
+});
+
+Route::get('/test/panels', function()
+{
+	return View::make('panel');
+});
+
+Route::get('/test/typography', function()
+{
+	return View::make('typography');
+});
+
+Route::get('/test/notifications', function()
+{
+	return View::make('notifications');
+});
+
+Route::get('/test/blank', function()
+{
+	return View::make('blank');
+});
+
+Route::get('/test/login', function()
+{
+	return View::make('login');
+});
+
+Route::get('/test/documentation', function()
+{
+	return View::make('documentation');
+});
+
 Auth::routes();
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/homes', 'HomeController@index')->name('homes');
 
     Route::get('/post/create', [
         'uses'  => 'PostsController@create',
